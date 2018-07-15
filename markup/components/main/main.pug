@@ -1,2 +1,6 @@
+include ../content/content.pug
+include ../sidebar/sidebar.pug
 mixin main(data)
-    .main
+    main.main
+        +content()
+        +sidebar()

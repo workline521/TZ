@@ -1,0 +1,24 @@
+include ../breadcrumbs/breadcrumbs.pug
+mixin content(data)
+    .content
+        .content__block1
+            +breadcrumbs()
+            .content__main-post
+                .content__wrapper
+                    .content__text-wrapper
+                        p.content__text ВТБ предлагает покупателям &laquo;Пресня Сити&raquo;, &laquo;Басманный, 5&raquo; и &laquo;Царская площадь&raquo; премиальное банковское обслуживание
+                        span.content__flag до 31 января
+                    .content__time-wrapper
+                        p.content__days 5 дней
+                        .content__clock
+                            span 08
+                            span 34
+                            span 10
+                .content__wrapper2
+                    a.content__pic1(href="#", style="background-image: url(static/img/general/pic2.jpg);")
+                .content__info
+                    p Размещение позиционирует институциональный стратегический маркетинг. Такое понимание ситуации восходит к Эл Райс, при этом нестандартный подход категорически экономит комплексный медиабизнес. Ценовая стратегия индуцирует бренд.
+                    .content__phone-wrapper
+                        p Узнайте детали акции
+                        a.content__phone(href="#") +7 495 150-XX-XX
+
