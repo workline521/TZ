@@ -10,6 +10,12 @@ html(class="no-js", lang="ru")
         +head(head.defaults)
     body.page
         |%=symbols=%
+        .header__mobile
+            a.header__mobile-logo(href="index.html")
+            .header__mobile-btn
+                .header__line1
+                .header__line2
+                .header__line3
         +header()
         +main()
         +footer()
