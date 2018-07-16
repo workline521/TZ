@@ -11,4 +11,6 @@ $(window).width() > 1023 && $(window).scroll(function() {
 $('.header__mobile-btn').click(function(){
     $('.header').fadeToggle(300);
     $('.header__mobile').toggleClass("cross");
+    $('html').toggleClass("overflow");
+    $('body').toggleClass("overflow");
 });

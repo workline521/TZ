@@ -241,6 +241,9 @@ body {
         margin-top: 5px;
     }
 }
+.overflow{
+    overflow: hidden;
+}
 @media (max-width: 1360px){
     .header__top-container{
         max-width: none;
@@ -295,12 +298,14 @@ body {
     .header{
         display: none;
         position: fixed;
-        top: 51px;
+        top: 67px;
         left: 0;
         width: 100%;
-        min-height: 100vh;
+        height: ~"calc(100vh - 67px)";
         z-index: 101;
         background: #3a3a43;
+        overflow-y: scroll;
+        padding-bottom: 40px;
     }
     .header__main-logo{
         display: none;
@@ -317,8 +322,8 @@ body {
         width: 100%;
         z-index: 100;
         background: #3a3a43;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -430,5 +435,17 @@ body {
     }
     .header__menu-link--dotted:before{
         display: none;
+    }
+}
+@media (max-width: 700px){
+    .header__mobile{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header__top-container{
+        padding-left: 15px;
+    }
+    .header__bottom-container{
+        padding-left: 15px;
     }
 }
