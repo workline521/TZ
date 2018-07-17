@@ -14,3 +14,13 @@ $('.header__mobile-btn').click(function(){
     $('html').toggleClass("overflow");
     $('body').toggleClass("overflow");
 });
+
+var windowWidth = $(window).width();
+$(window).resize(function(){
+    if ($(window).width() != windowWidth) {
+        windowWidth = $(window).width();
+        setTimeout(function(){
+          window.location.reload();
+        });
+    }
+});
